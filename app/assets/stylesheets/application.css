@@ -102,3 +102,11 @@ main{
   transform: translateY(-10px);
   transition-duration: 0.5s
 }
+.show-image{
+  border-radius: 50%;
+  transition-duration: 0.3s;
+}
+.show-image:hover{
+  border-radius: 0;
+  transition-duration: 0.3s;
+}
