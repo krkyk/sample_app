@@ -97,3 +97,8 @@ main{
   width:200px;
   height:200px;
 }
+.list-box:hover{
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+  transform: translateY(-10px);
+  transition-duration: 0.5s
+}
