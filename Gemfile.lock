@@ -278,7 +278,9 @@ DEPENDENCIES
   rack-mini-profiler (~> 2.0)
   rails (~> 6.1.4, >= 6.1.4.6)
   rspec-rails
+  rubocop
   rubocop-airbnb
+  rubocop-rails
   sass-rails (>= 6)
   spring
   sqlite3 (~> 1.4)

@@ -37,7 +37,7 @@ end
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 4.1.0'
-  # Display performance information such as SQL time and flame graphs for each request in your browser.
+  # Display performance information such as SQL time and flame graphs for each request in your browser.# rubocop:disable Style/LineLength
   # Can be configured to work on production as well see: https://github.com/MiniProfiler/rack-mini-profiler/blob/master/README.md
   gem 'rack-mini-profiler', '~> 2.0'
   gem 'listen', '~> 3.3'
@@ -49,9 +49,9 @@ end
 group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 3.26'
-  #gem 'selenium-webdriver'
+  # gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
-  #gem 'webdrivers'
+  # gem 'webdrivers'
   gem 'rspec-rails'
   gem "factory_bot_rails"
   gem 'faker'
@@ -60,3 +60,5 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'dotenv-rails'
+gem 'rubocop', require: false
+gem 'rubocop-rails', require: false
