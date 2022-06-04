@@ -124,6 +124,21 @@ main {
   transition-duration: 0.3s;
 }
 
+.new-post {
+  width: 50%;
+  margin: auto;
+  color: #191970;
+}
+
+.new-title {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.new-form {
+  width: 100%;
+}
+
 footer {
   height: 80px;
   width:90%;
