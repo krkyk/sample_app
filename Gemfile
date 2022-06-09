@@ -63,3 +63,4 @@ gem 'dotenv-rails'
 gem 'rubocop', require: false
 gem 'rubocop-rails', require: false
 gem 'rakuten_web_service'
+gem 'pry-byebug'

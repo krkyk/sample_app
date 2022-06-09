@@ -5,9 +5,20 @@
 
 <% if @goods.present? %>
   <% @goods.each do |goods| %>
-    <%= goods.name %>
-    <%#= link_to goods.url do %>
-      <%#= image_tag (goods.medium_image_urls) %>
-    <%# end %>
+    <li>
+      <%= link_to goods.url do %>
+        <%= image_tag (goods.medium_image_urls[0]) %>
+      <% end %>
+      <%= goods.name %>
+    </li>
+  <% end %>
+<% else %>
+  <% @outdoors_goods.each do |outdoors_goods| %>
+  <li>
+    <%= link_to outdoors_goods.url do %>
+      <%= image_tag (outdoors_goods.medium_image_urls[0]) %>
+      <%= outdoors_goods.name %>
+    <% end %>
+  </li>
   <% end %>
 <% end %>
