@@ -1,0 +1,11 @@
+<%= form_with url: goods_search_path,method: :get do |f|%>
+<%= f.text_field :keyword %>
+<%= f.submit '検索' %>
+<% end %>
+
+<% if @goods.present? %>
+<% @goods.each do |goods| %>
+<%= goods.name %>
+<%= link_to goods.url, goods.url %>
+<% end %>
+<% end %>

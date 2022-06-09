@@ -62,3 +62,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'dotenv-rails'
 gem 'rubocop', require: false
 gem 'rubocop-rails', require: false
+gem 'rakuten_web_service'

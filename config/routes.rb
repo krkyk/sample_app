@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'goods/search'
   root to: "homes#top"
   # get 'top'=>"homes#top"
   resources :lists
