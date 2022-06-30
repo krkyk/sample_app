@@ -1,3 +1,19 @@
 <header>
-  <h3 class="py-4">Practise App</h3>
+  <h3 class="py-4 text-center">Practise App</h3>
+  <nav>
+    <ul class="nav-list">
+      <li class="nav-list-item">
+        <%= link_to "Top", root_path, class: "nav-item" %>
+      </li>
+      <li class="nav-list-item">
+        <%= link_to "Lists", lists_path, class: "nav-item" %>
+      </li>
+      <li class="nav-list-item">
+        <%= link_to "New List", new_list_path, class: "nav-item" %>
+      </li>
+      <li class="nav-list-item">
+          <%= link_to "Rakuten", goods_search_path, class: "nav-item" %>
+        </li>
+    </ul>
+  </nav>
 </header>

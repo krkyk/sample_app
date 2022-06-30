@@ -27,46 +27,47 @@ font-size: 32px;
 }
 
 nav{
-  width: 880px;
   margin: 0 auto;
   border-top: solid 0.7px #000000;
   border-bottom: solid 0.7px #000000;
 }
 
 .nav-list {
-  text-align:center;
-  padding:10px 0;
-  margin:0 auto;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0 auto;
 }
 
 .nav-list-item {
-  list-style:none;
-  display:inline-block;
-  margin:0 20px;
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.nav-item {
+  color: #000;
 }
 
 main {
-  width:880px;
-  margin:0 auto;
   flex: 1;
 }
 
 .list-wrap {
-  display:flex;
-  flex-wrap:wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .list-box {
-  width:200px;
-  height:250px;
-  margin:10px;
-  position:relative;
+  width: 200px;
+  height: 250px;
+  margin: 10px;
+  position: relative;
 }
 
 .list-comment {
   width:200px;
   position:absolute;
-  left:0;
+  left: 0;
   bottom: 0;
 }
 
