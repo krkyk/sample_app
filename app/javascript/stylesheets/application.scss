@@ -126,10 +126,6 @@ main {
   color: #191970;
 }
 
-footer {
-  height: 80px;
-}
-
 .btn-blue{
   display: inline-block;
   outline: 0;
@@ -156,4 +152,8 @@ footer {
 .btn-blue:active{
   box-shadow: inset 0px 3px 7px #3c4fe0;
   transform: translateY(2px);
+}
+
+footer {
+  height: 80px;
 }
