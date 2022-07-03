@@ -1,0 +1,10 @@
+<% comments.each do |comment| %>
+  <table class="table table-borderless">
+    <tbody>
+      <tr class="row d-flex align-items-center">
+        <td class="col-8 col-md-8 col-lg-10"><%= comment.comment %></td>
+        <td class="col-4 col-md-4 col-lg-2"><%= comment.name %></td>
+      </tr>
+    </tbody>
+  </table>
+<% end %>
