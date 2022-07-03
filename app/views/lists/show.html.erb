@@ -1,15 +1,20 @@
-<h2>タイトル</h2>
-<p><%= @list.title%></p>
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-10 col-lg-8 mx-auto">
+      <h4 class="text-center mt-5">「<%= @list.title %>」</h4>
+      <div class="text-center">
+        <%= image_tag @list.get_list_image(300,300),class: "show-image my-3" %>
+      </div>
+      <h5 class="text-center"><%= @list.body %></h5>
 
-<h2>本文</h2>
-<p><%= @list.body%></p>
-
-<h2>画像</h2>
-<%if @list.image.attached?%>
-  <%=image_tag @list.image, size:"300x300",class:"show-image"%>
-<%else%>
-<%=image_tag "no_image", size:"300x300"%>
-<%end%>
-
-<%= link_to"編集",edit_list_path(@list.id)%>
-<%= link_to"削除",list_path(@list.id),method: :delete,"data-confirm"=>"本当に削除しますか？"%>
+      <div class="text-center my-5">
+        <%= link_to edit_list_path(@list),class: "btn btn-success mr-2" do %>
+          編集
+        <% end %>
+        <%= link_to list_path(@list),method: :delete,"data-confirm"=>"本当に削除しますか？",class: "btn btn-danger" do %>
+          削除
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
