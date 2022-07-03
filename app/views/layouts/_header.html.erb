@@ -4,18 +4,27 @@
   </h3>
   <nav>
     <ul class="nav-list">
-      <li class="nav-list-item">
-        <%= link_to "Top", root_path, class: "nav-item" %>
-      </li>
-      <li class="nav-list-item">
-        <%= link_to "Lists", lists_path, class: "nav-item" %>
-      </li>
-      <li class="nav-list-item">
-        <%= link_to "New List", new_list_path, class: "nav-item" %>
-      </li>
-      <li class="nav-list-item">
-          <%= link_to "Rakuten", goods_search_path, class: "nav-item" %>
+      <%if user_signed_in?%>
+        <li class="nav-list-item">
+          <%= link_to "Top", root_path, class: "nav-item" %>
         </li>
+        <li class="nav-list-item">
+          <%= link_to "Lists", lists_path, class: "nav-item" %>
+        </li>
+        <li class="nav-list-item">
+          <%= link_to "New List", new_list_path, class: "nav-item" %>
+        </li>
+        <li class="nav-list-item">
+          <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "nav-item" %>
+        </li>
+      <% else %>
+        <li class="nav-list-item">
+          <%= link_to "Top", root_path, class: "nav-item" %>
+        </li>
+        <li class="nav-list-item">
+          <%= link_to "Lists", lists_path, class: "nav-item" %>
+        </li>
+      <% end %>
     </ul>
   </nav>
 </header>

@@ -55,7 +55,7 @@ main {
   flex: 1;
 }
 
-.top-container {
+.design-container {
   background-image: url('../../assets/images/star.jpg');
   background-size: cover;
   min-height: 100vh;
@@ -63,42 +63,6 @@ main {
 
 .top-text {
   color: #fff;
-}
-
-.list-wrap {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.list-box {
-  width: 200px;
-  height: 250px;
-  margin: 10px;
-  position: relative;
-}
-
-.list-comment {
-  width:200px;
-  position:absolute;
-  left: 0;
-  bottom: 0;
-}
-
-.list-body {
-  display: block;
-  color: gray;
-  font-size: 12px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
-.list-title {
-  display: block;
-  font-size: 18px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-pverflow: ellips
 }
 
 .icon {
