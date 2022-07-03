@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="mx-auto col-12 col-md-8 col-lg-6 py-5">
+      <%= form_with model: @user, url: user_session_path do |f| %>
+        <div class="form-group">
+            <%= f.label :名前 %>
+            <%= f.text_field :name, autofocus: true, :placeholder=>"お名前",class: "form-control" %>
+        </div>
+        <div class="form-group">
+            <%= f.label :パスワード %>
+            <%= f.password_field :password, autocomplete: "current-password" ,class: "form-control" %>
+        </div>
+        <div class="form-group text-center">
+            <%= f.submit "ログイン",class: "btn btn-blue mt-3" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
