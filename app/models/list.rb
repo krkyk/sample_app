@@ -1,4 +1,6 @@
 class List < ApplicationRecord
+  has_many :comments, dependent: :destroy
+
   has_one_attached :list_image
 
    with_options presence: true do

@@ -30,7 +30,12 @@
           <% end %>
         </div>
         <div class="row my-3">
-          <div class="mx-auto"><%= paginate @comments %></div>
+          <div class="mx-auto"><%#= paginate @comments %></div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <%= render"comments/comment_form", comment: @comment %>
+          </div>
         </div>
     </div>
   </div>
