@@ -20,7 +20,6 @@ class ListsController < ApplicationController
   def show
     @list = List.find(params[:id])
     @comment = Comment.new
-    #@comments = Comment.all
     @comments = @list.comments.order(created_at: 'DESC').page(params[:page]).per(5)
   end
 
