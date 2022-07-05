@@ -3,9 +3,8 @@ class CommentsController < ApplicationController
     @list = List.find(params[:list_id])
     @comment = Comment.new(comment_params)
     @comment.list_id = @list.id
+    @comments = @list.comments.order(created_at: 'DESC').page(params[:page]).per(5)
     @comment.save
-    @comments = Comment.all
-    #@comments = @list.comments.order(created_at: 'DESC').page(params[:page]).per(5)
   end
 
   def destroy

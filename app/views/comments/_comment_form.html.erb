@@ -1,11 +1,9 @@
-<%= form_with model: comment, url: list_comments_path(list), method: :post, local: false do |f| %>
+<%= form_with model: comment, url: list_comments_path(@list), method: :post, remote: true do |f| %>
   <div class="form-group">
     <%= f.text_area :comment, rows: "2", placeholder: "コメントはこちら" ,class: "form-control"%>
-    <%= f.text_field :name %>
+    <%= f.text_field :name, placeholder: "お名前" ,class: "form-control w-25 mt-3" %>
   </div>
   <div class="form-group text-right">
-    <%= button_tag type: 'submit',class: "btn btn-sm btn-blue" do%>
-      送信
-    <% end %>
+    <%= f.submit "送信",class: "btn btn-sm btn-blue" %>
   </div>
 <%end%>
